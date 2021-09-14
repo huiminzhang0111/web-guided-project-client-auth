@@ -20,6 +20,8 @@ function authenticator(req, res, next) {
   }
 }
 
+// http://localhost:5000/api/login
+
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
   if (username === "lambda" && password === "school") {
