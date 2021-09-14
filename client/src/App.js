@@ -6,7 +6,7 @@ import Logout from './components/Logout';
 import GasPrices from './components/GasPrices';
 
 function App() {
-  const isLoggedIn = false;
+  const isLoggedIn = localStorage.getItem("token");
 
   return (
     <Router>
