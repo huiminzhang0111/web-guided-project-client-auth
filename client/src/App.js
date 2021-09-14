@@ -24,7 +24,7 @@ function App() {
             {isLoggedIn ? <Link to="/protected">Protected Page</Link>:<div></div> }
           </li>
           <li>
-            {isLoggedIn ? <p> Welcome {localStorage.getItem("username")}</p>}
+            { isLoggedIn ? <p>Welcome {localStorage.getItem("username")}</p>:<div></div>}
           </li>
         </ul>
         <Switch>
