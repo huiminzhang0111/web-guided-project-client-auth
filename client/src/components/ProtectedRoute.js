@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-const ProtectedRoute = ({component, ...rest})=> {
+const ProtectedRoute = ({component:Component, ...rest})=> {
     return <Route {...rest} render={()=> {
-        return <div>Protected asdfa</div>
+        return <Component/>
     }}/>
 }
 
