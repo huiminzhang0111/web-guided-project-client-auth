@@ -3,7 +3,10 @@ import axios from 'axios';
 
 const Logout = ()=> {
     useEffect(()=> {
-        axios.
+        const token = localStorage.getItem("token");
+        axios.post('http://localhost:5000/api/logout', {
+            authorization: token
+        })
     }, []);
 
 
