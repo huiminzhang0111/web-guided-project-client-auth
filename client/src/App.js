@@ -6,8 +6,8 @@ import Logout from './components/Logout';
 import GasPrices from './components/GasPrices';
 
 function App() {
-  const isLoggedIn = true;
-  
+  const isLoggedIn = false;
+
   return (
     <Router>
       <div className="App">
@@ -19,7 +19,7 @@ function App() {
             <Link to="/logout">Logout</Link>
           </li>
           <li>
-            {isLoggedin && <Link to="/protected">Protected Page</Link> }
+            {isLoggedIn && <Link to="/protected">Protected Page</Link> }
           </li>
         </ul>
         <Switch>
