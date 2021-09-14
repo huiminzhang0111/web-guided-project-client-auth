@@ -23,6 +23,9 @@ function App() {
           <li>
             {isLoggedIn ? <Link to="/protected">Protected Page</Link>:<div></div> }
           </li>
+          <li>
+            {isLoggedIn ? <p> Welcome {localStorage.getItem("username")}</p>}
+          </li>
         </ul>
         <Switch>
           <Route exact path="/protected" component={GasPrices} />
