@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import ProtectedRoute from './components/ProProtectedRoutetectedRoute';
+import ProtectedRoute from './components/ProtectedRoute';
 
 import Login from './components/Login';
 import Logout from './components/Logout';
