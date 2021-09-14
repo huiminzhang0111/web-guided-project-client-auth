@@ -6,8 +6,6 @@ import Logout from './components/Logout';
 import GasPrices from './components/GasPrices';
 
 function App() {
-  // const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const isLoggedIn = localStorage.getItem("token");
 
   return (
