@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import ProtectedRoute from './components/ProtectedRoute';
 
 import Login from './components/Login';
 import Logout from './components/Logout';
@@ -26,7 +27,7 @@ function App() {
           </li>
         </ul>
         <Switch>
-          <Route exact path="/protected" component={GasPrices} />
+          <ProtectedRoute exact path="/protected" component={GasPrices} />
           <Route path="/logout" component={Logout} />
           <Route path="/login" component={Login} />
           <Route path="/" component={Login} />    
