@@ -18,7 +18,7 @@ function App() {
             <Link to="/login">Login</Link>
           </li>
           <li>
-            {!isLoggedIn ? <Link to="/logout">Logout</Link>: <div></div>}
+            <Link to="/logout">Logout</Link>
           </li>
           <li>
             {isLoggedIn ? <Link to="/protected">Protected Page</Link>:<div></div> }
