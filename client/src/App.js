@@ -19,7 +19,7 @@ function App() {
             <Link to="/logout">Logout</Link>
           </li>
           <li>
-            {isLoggedIn && <Link to="/protected">Protected Page</Link> }
+            {isLoggedIn ? <Link to="/protected">Protected Page</Link>:<div></div> }
           </li>
         </ul>
         <Switch>
